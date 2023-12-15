@@ -26,6 +26,6 @@ function displayResult(score) {
   const resultContainer = document.getElementById('result-container');
   const quizResult = document.getElementById('quiz-result');
 
-  quizResult.textContent = `Anda mendapatkan ${score} dari 3 pertanyaan benar! Selamat Anniversary! 🎉`;
+  quizResult.textContent = `Ayang mendapatkan ${score} dari 3 pertanyaan benar! Happy Anniversary Sayangku! 🎉`;
   resultContainer.style.display = 'block';
 }
