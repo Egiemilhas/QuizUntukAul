@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anniversary Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="quiz-container">
+        <h1>Anniversary Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">Pertanyaan 1: Kapan kita pertama kali bertemu?</label>
+            <select id="question1" name="question1" required>
+                <option value="">Pilih Jawaban</option>
+                <option value="a">Di Bulan MEI</option>
+                <option value="b">Di Bulan JULI</option>
+                <option value="c">Di Bulan Agustus</option>
+            </select>
+
+            <label for="question2">Pertanyaan 2: Apa Cemilan favorit ku?</label>
+            <select id="question2" name="question2" required>
+                <option value="">Pilih Jawaban</option>
+                <option value="a">Ketoprak</option>
+                <option value="b">Burger</option>
+                <option value="c">Mie goreng ayam kremes</option>
+            </select>
+
+            <label for="question3">Pertanyaan 3: Tempat apa yang paling kita nikmati untuk liburan?</label>
+            <select id="question3" name="question3" required>
+                <option value="">Pilih Jawaban</option>
+                <option value="a">Pantai</option>
+                <option value="b">Gunung</option>
+                <option value="c">Kota besar</option>
+            </select>
+
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+
+        <div id="result-container" style="display: none;">
+            <h2>Hasil Quiz:</h2>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
