@@ -6,7 +6,7 @@ function submitQuiz() {
   };
 
   const correctAnswers = {
-    question1: 'b',
+    question1: 'a',
     question2: 'b',
     question3: 'a',
   };

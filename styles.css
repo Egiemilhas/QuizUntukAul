@@ -1,14 +1,26 @@
 body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(45deg, #3498db, #8e44ad); /* Gradien warna biru ke ungu */
+  color: #fff;
+  text-align: center;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   height: 100vh;
-  margin: 12px;
-  font-family: Arial, sans-serif;
 }
 
 .quiz-container {
-  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #2c3e50;
 }
 
 form {
@@ -18,20 +30,52 @@ form {
 label {
   display: block;
   margin-bottom: 10px;
+  color: #2c3e50;
 }
 
 select {
   width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 button {
-  padding: 10px;
-  font-size: 16px;
+  background: linear-gradient(45deg, #e74c3c, #c0392b); /* Gradien warna merah ke maroon */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #c0392b, #e74c3c); /* Gradien warna maroon ke merah saat dihover */
 }
 
 #result-container {
   margin-top: 20px;
+}
+
+.quiz-result {
+  font-size: 20px;
+  color: #2c3e50;
+  font-weight: bold;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Gunakan animasi fadeIn ketika menampilkan hasil quiz */
+#result-container {
+  animation: fadeIn 1s ease-in-out;
 }
