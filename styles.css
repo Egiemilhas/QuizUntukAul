@@ -3,7 +3,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin: 50px;
+  margin: 12px;
   font-family: Arial, sans-serif;
 }
 
@@ -34,8 +34,4 @@ button {
 
 #result-container {
   margin-top: 20px;
-}
-
-.quiz-container {
-  margin: 50px;
 }
